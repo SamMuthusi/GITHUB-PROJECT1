@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    
+   
+    padding: 0;
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+table {
+    width: 70%;
+    border-collapse: collapse;
+    float: right;
+    
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #e6dfdf;
+}
+.submit{
+    margin-top: 80%;
+}
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 585px;
+    width: 100%;
+    
+}
+
+
+.footer-container {
+    max-width: 80px;
+    margin: 0 auto;
+}

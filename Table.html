@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-waste Dashboard</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+        <link rel="stylesheet" href="DASHBOARD.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="user-actions">
+                    <ul>
+                       <li><a href="#">Profile</a></li>
+                       <li><a href="#">Logout</a></li>
+                       <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+<div class="sidebar">
+    <div class="top">
+        <div class="logo">
+        <span> SYSTEM REQUEST</span>
+        </div>
+        <i class="bx bx-menu"id="btn"></i>
+    </div>
+    
+    <ul>
+        <li>
+            <a href="DASHBOARD.html">
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item"> Dashboard</span>
+            </li>
+            </a>
+            
+        <li>
+            <a href="TBack.html">
+                <i class="bx bx-cart-add"></i>
+                <span class="nav-item">Request Pickup</span>
+            </a>
+           
+        </li>
+        <li>
+            <a href="DSform.html">
+                <i class="bx bx-donate-heart"></i>
+                <span class="nav-item"> Sell/Donate</span>
+            </a>
+           
+        </li>
+        <li>
+            <a href="Table.html">
+                <i class="bx bxs-food-menu"></i>
+                <span class="nav-item"> Products</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="Status.html">
+                <i class="bx bx-list-check"></i>
+                <span class="nav-item">Status </span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="Cdash.html">
+                <i class="bx bx-body"></i>
+                <span class="nav-item"> Clients</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="Fback.html">
+                <i class="bx bx-location-plus"></i>
+                <span class="nav-item"> Feedback</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="eWaste_report.html">
+                <i class="bx bx-pie-chart"></i>
+                <span class="nav-item"> Report</span>
+            </a>
+            
+    </ul>
+          </div>
+           <div class="main-content">
+    <div class="container">
+        <html>
+            <head>
+                <link rel="stylesheet" type="text/css" href="eWaste.css">
+            </head>
+            <body>
+                <form id="eWasteForm" action="eWasteform.php" method="POST">
+                    <table>
+                        <tr>
+                            <th>E-Waste Category</th>
+                            <th>Mark</th>
+                            <th>Quantity (Kg)</th>
+                        </tr>
+                        <tr>
+                            <td>Monitoring & Control Equipment</td>
+                            <td><input type="checkbox" name="mark1"></td>
+                            <td><input type="text" name="quantity1"></td>
+                        </tr>
+                        <tr>
+                            <td>Electronical and Electronic Tools</td>
+                            <td><input type="checkbox" name="mark2"></td>
+                            <td><input type="text" name="quantity2"></td>
+                        </tr><tr>
+                            <td>IT and Telecommunications Equipment</td>
+                            <td><input type="checkbox" name="mark3"></td>
+                            <td><input type="text" name="quality3"></td>
+                        </tr>
+                        <tr>
+                            <td>Automatic dispensers</td>
+                            <td><input type="checkbox" name="mark4"></td>
+                            <td><input type="text" name="quality4"></td>
+                        </tr>
+                        <tr>
+                            <td>Toys, Leisure and Sports Equipment</td>
+                            <td><input type="checkbox" name="mark5"></td>
+                            <td><input type="text" name="quality5"></td>
+                        </tr>
+                        <tr>
+                            <td>Household appliaces(large & small)</td>
+                            <td><input type="checkbox" name="mark6"></td>
+                            <td><input type="text" name="quality6"></td>
+                        </tr>
+                        <tr>
+                            <td>Consumers electronics</td>
+                            <td><input type="checkbox" name="mark7"></td>
+                            <td><input type="text" name="quality7"></td>
+                        </tr>
+                        <tr>
+                            <td>Medical devices</td>
+                            <td><input type="checkbox" name="mark8"></td>
+                            <td><input type="text" name="quality8"></td>
+                        </tr>
+                        <tr>
+                            <td>Others</td>
+                            <td><input type="checkbox" name="mark"></td>
+                            <td><input type="text" name="quantity"></td>
+                        </tr>
+                    </table>
+            
+                    <div class="button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </body>
+            </html>
+</div>
+</div>
+<footer>
+    <div class="footer-container">
+     &copy;copyright reserved Sam@2023 
+    </div>
+    </footer>
+</body>
+<script>
+let btn= document.quarySelector('#btn')
+let sidebar= document.quarySelector('.sidebar')
+btn.onclick= function(){
+sidebar.classList.toggle('active');
+};
+</script>
+</html>

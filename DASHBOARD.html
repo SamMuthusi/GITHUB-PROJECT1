@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-waste Dashboard</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="DASHBOARD.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="user-actions">
+                    <ul>
+                       <li><a href="#">Profile</a></li>
+                       <li><a href="#">Logout</a></li>
+                       <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+<div class="sidebar">
+    <div class="top">
+        <div class="logo">
+        <span> SYSTEM REQUEST</span>
+        </div>
+        <i class="bx bx-menu"id="btn"></i>
+    </div>
+    
+    <ul>
+        <li>
+            <a href="DASHBOARD.html">
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item"> Dashboard</span>
+            </li>
+            </a>
+            <span class="tooltip">Dashboard </span>
+        <li>
+            <a href="TBack.html">
+                <i class="bx bx-cart-add"></i>
+                <span class="nav-item">Request Pickup</span>
+            </a>
+            <span class="tooltip">Request Pickup</span>
+        </li>
+        <li>
+            <a href="DSform.html">
+                <i class="bx bx-donate-heart"></i>
+                <span class="nav-item"> Sell/Donate</span>
+            </a>
+            <span class="tooltip"> Sell/Donate</span>
+        </li>
+        <li>
+            <a href="Table.html">
+                <i class="bx bxs-food-menu"></i>
+                <span class="nav-item"> Products</span>
+            </a>
+            <span class="tooltip"> Product<span>
+        </li>
+        <li>
+            <a href="Status.html">
+                <i class="bx bx-list-check"></i>
+                <span class="nav-item">Status </span>
+            </a>
+            <span class="tooltip"> Status</span>
+        </li>
+        <li>
+            <a href="Client.html">
+                <i class="bx bx-body"></i>
+                <span class="nav-item"> Clients</span>
+            </a>
+            <span class="tooltip"> Clients</span>
+        </li>
+        <li>
+            <a href="Fback.html">
+                <i class="bx bx-location-plus"></i>
+                <span class="nav-item"> Feedback</span>
+            </a>
+            <span class="tooltip"> Feedback</span>
+        </li>
+        <li>
+            <a href="eWaste_report.html">
+                <i class="bx bx-pie-chart"></i>
+                <span class="nav-item"> Report</span>
+            </a>
+            <span class="tooltip">Report</span>
+        </li>
+    </ul>
+          </div>
+           <div class="main-content">
+    <div class="container">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="Card.css">
+            <title>Dashboard</title>
+        </head>
+        <body>
+            <div class="dashboard-container">
+                <section class="main-section">
+                    <div class="card profile-card">
+                        <!-- Profile Card Content -->
+                        <h2>Profile Details</h2>
+                        <!-- Add profile card content here -->
+                    </div>
+        
+                    <div class="card pickup-card">
+                        <!-- Pick-up Card Content -->
+                        <h2>Request-Pick-up </h2>
+                        <!-- Add pick-up card content here -->
+                    </div>
+        
+                    <div class="card sell-donation-card">
+                        <!-- Sell/Donation Card Content -->
+                        <h2>Sell/Donation Products</h2>
+                        <!-- Add sell/donation card content here -->
+                    </div>
+        
+                    <div class="card product-card">
+                        <!-- Product Card Content -->
+                        <h2>Products Category</h2>
+                        <!-- Add product card content here -->
+                    </div>
+        
+                    <div class="card status-card">
+                        <!-- Status Card Content -->
+                        <h2>View_Status </h2>
+                        <!-- Add status card content here -->
+                    </div>
+        
+                    <div class="card feedback-card">
+                        <!-- Feedback Card Content -->
+                        <h2> Submit Feedback </h2>
+                        <!-- Add feedback card content here -->
+                    </div>
+        
+                    <div class="card client-card">
+                        <!-- Client Card Content -->
+                        <h2>Client Information</h2>
+                        <!-- Add client card content here -->
+                    </div>
+                </section>
+            </div>
+        </body>
+        </html>
+        
+    </div>
+          </div>
+          <footer>
+          <div class="footer-container">
+           &copy;copyright reserved Sam@2023 
+          </div>
+          </footer>
+    </body>
+    <script>
+        let btn= document.quarySelector('#btn')
+        let sidebar= document.quarySelector('.sidebar')
+        btn.onclick= function(){
+        sidebar.classList.toggle('active');
+        };
+    </script>
+</html>

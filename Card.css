@@ -1,0 +1,74 @@
+
+
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 250px; /* Adjust the width as needed */
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Customize card styles as needed */
+.profile-card {
+    background-color: #e6f7ff;
+}
+
+.pickup-card {
+    background-color: #ccffcc;
+}
+
+.sell-donation-card {
+    background-color: #ffd699;
+}
+
+.product-card {
+    background-color: #e0ccff;
+}
+
+.status-card {
+    background-color: #ffcc99;
+}
+
+.feedback-card {
+    background-color: #ccffdd;
+}
+
+.client-card {
+    background-color: #ffdb4d;
+}
+/* Footer styling */
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 230px;
+    width: 100%;
+    
+}
+
+.footer-container {
+   width: 100%;
+   
+    
+  }

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-waste Dashboard</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+        <link rel="stylesheet" href="DASHBOARD.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="user-actions">
+                    <ul>
+                       <li><a href="#">Profile</a></li>
+                       <li><a href="#">Logout</a></li>
+                       <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+<div class="sidebar">
+    <div class="top">
+        <div class="logo">
+        <span> SYSTEM REQUEST</span>
+        </div>
+        <i class="bx bx-menu"id="btn"></i>
+    </div>
+    
+    <ul>
+        <li>
+            <a href="#">
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item"> Dashboard</span>
+            </li>
+            </a>
+            
+        <li>
+            <a href="TBack.html">
+                <i class="bx bxl-codepen"></i>
+                <span class="nav-item">Request Pickup</span>
+            </a>
+           
+        </li>
+        <li>
+            <a href="DSform.html">
+                <i class="bx bx-shopping-bag"></i>
+                <span class="nav-item"> Sell/Donate</span>
+            </a>
+           
+        </li>
+        <li>
+            <a href="Table.html">
+                <i class="bx bxs-food-menu"></i>
+                <span class="nav-item"> Products</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="Status.html">
+                <i class="bx bx-list-check"></i>
+                <span class="nav-item">Status </span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="Client.html">
+                <i class="bx bx-body"></i>
+                <span class="nav-item"> Clients</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="Fback.html">
+                <i class="bx bx-location-plus"></i>
+                <span class="nav-item"> Feedback</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="Logout.html">
+                <i class="bx bx-log-out"></i>
+                <span class="nav-item"> Logout</span>
+            </a>
+            
+    </ul>
+          </div>
+           <div class="main-content">
+    <div class="container">
+        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Client.css">
+    <title>Client Container</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Client who request collection/ Submited feedback</h1>
+        <div class="tab-navigation">
+            <button class="tab" id="requests-tab" onclick="showTab('requests')">Requests</button>
+            <button class="tab" id="feedback-tab" onclick="showTab('feedback')">Feedback</button>
+        </div>
+        <div id="requests-content" class="content">
+            <h2>Clients who submitted requests for collection:</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>12345</td>
+                    <td>johndoe123@gmail.com</td>
+                    <td>Embakasi-Nairobi</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>67890</td>
+                    <td>janesmith123@gmail.com</td>
+                    <td>Ngara-Nairobi</td>
+                </tr>
+            </table>
+        </div>
+        <div id="feedback-content" class="content" style="display: none;">
+            <h2>Clients who submitted feedback:</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>Alice Johnson</td>
+                    <td>54321</td>
+                    <td>alicejohnson@gmail.com</td>
+                    <td>Athi-River-Machakos</td>
+                </tr>
+                <tr>
+                    <td>Bob Wilson</td>
+                    <td>98765</td>
+                    <td>bobwilson@gmail.com</td>
+                    <td>Juja-Kiambu</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            var tabs = document.getElementsByClassName('tab');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+
+            var contents = document.getElementsByClassName('content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+
+            document.getElementById(tabName + '-tab').classList.add('active');
+            document.getElementById(tabName + '-content').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+        
+    </div>
+          </div>
+          <footer>
+          <div class="footer-container">
+           &copy; Sam@2023 
+          </div>
+          </footer>
+    </body>
+    <script>
+        let btn= document.quarySelector('#btn')
+        let sidebar= document.quarySelector('.sidebar')
+        btn.onclick= function(){
+        sidebar.classList.toggle('active');
+        };
+    </script>
+</html>

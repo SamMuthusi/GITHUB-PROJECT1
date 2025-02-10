@@ -1,0 +1,256 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color to the entire page */
+body {
+   
+    font-family: Arial, sans-serif;
+    background-image:url("images/qe.jpg");
+    background-size: cover;
+}
+
+/* Header styling */
+header {
+    background-color: green;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}nav ul li a :hover{
+    color: darkblue;
+}
+
+/* Main content styling */
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 68%;
+    }
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+   
+   
+}
+
+.search-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-container {
+    background-color: #439074;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    max-width: 320px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-btn {
+    background-color: rgb(0, 149, 255);
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 80%;
+    height: 45px;
+    cursor: pointer;
+}
+.remember-forgot{
+    font-size: .9em;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content:space-between ;
+}
+.remember-forgot label input{
+    margin-right: 3px;
+    accent-color: blue;
+}
+.remember-forgot a{
+    color: #111f5e;
+    text-decoration: none;
+}
+.remember-forgot a :hover{
+    text-decoration: underline;
+
+}
+.login-register{
+    font-size: .9em;
+    color: aqua;
+    text-align: center; 
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a{
+    text-decoration: none;
+    color: #26a8b1;
+    font-weight: 600;
+} 
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer { padding:0px ;
+    /* Add styling for the footer as needed */
+}
+.h3{
+    text-align: center;
+    font-size: 35px; 
+}.h4{
+    text-align: center;
+    font-size: 35px;
+}.h5{
+    text-align: center;
+    font-size: 35px;
+}.h6
+   { text-align: center;
+    font-size: 55px;
+}
+.feedback-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedback-form textarea{
+    width: 100px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.feedback-form button{
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    border: none;
+}
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and text color to the entire body */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Style headings (h3, h4, h5, h6) */
+h3, h4, h5, h6 {
+    font-family: "Arial", sans-serif;
+    color: #007bff;
+}
+
+/* Add spacing between paragraphs */
+p {
+    margin-bottom: 20px;
+}
+
+/* Style the main content container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Center the text in the container */
+.container p {
+    text-align: justify;
+}
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and text color to the entire body */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Style the "Our Physical Locations" heading */
+p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style the address information */
+p:not(:first-child) {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Style links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Style links on hover */
+a:hover {
+    text-decoration: underline;
+}

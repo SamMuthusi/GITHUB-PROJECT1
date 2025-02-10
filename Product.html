@@ -1,0 +1,52 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form id="dataForm">
+        <table>
+            <tr>
+                <th>E-Waste Category</th>
+                <th>Mark</th>
+                <th>Quantity (Kg)</th>
+            </tr>
+            <tr>
+                <td>Monitoring & Control Equipment</td>
+                <td><input type="checkbox" name="mark1"></td>
+                <td><input type="text" name="quantity1"></td>
+            </tr>
+            <!-- ... (repeat for other rows) ... -->
+        </table>
+
+        <div class="button">
+            <button type="button" onclick="submitForm()">Submit</button>
+        </div>
+    </form>
+
+    <script>
+        function submitForm() {
+            // Gather data from the form
+            var formData = {
+                mark1: document.getElementsByName("mark1")[0].checked,
+                quantity1: document.getElementsByName("quantity1")[0].value,
+                // Repeat the above pattern for other fields
+            };
+
+            // Send data to XAMPP database using AJAX (assuming you're using jQuery)
+            $.ajax({
+                type: "POST",
+                url: "your_php_script_to_handle_form_submission.php",
+                data: formData,
+                success: function(response) {
+                    // Handle the response from the server if needed
+                    console.log(response);
+                },
+                error: function(error) {
+                    // Handle errors if any
+                    console.error(error);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

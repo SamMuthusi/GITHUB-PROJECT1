@@ -1,0 +1,93 @@
+
+
+.container {
+    background-color: #93a3b3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.rating {
+    margin-top: 5px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    float: right;
+    cursor: pointer;
+    color: #ddd;
+    font-size: 24px;
+}
+
+.rating label:before {
+    content: '\2605';
+}
+
+.rating input:checked ~ label {
+    color: #FFD700;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#confirmation-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 210px;
+    width: 100%;
+    
+}
+
+
+.footer-container {
+    max-width: 80px;
+    margin: 0 auto;
+}

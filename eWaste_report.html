@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-waste Dashboard</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+        <link rel="stylesheet" href="DASHBOARD.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="user-actions">
+                    <ul>
+                       <li><a href="#">Profile</a></li>
+                       <li><a href="#">Logout</a></li>
+                       <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+<div class="sidebar">
+    <div class="top">
+        <div class="logo">
+        <span> SYSTEM REQUEST</span>
+        </div>
+        <i class="bx bx-menu"id="btn"></i>
+    </div>
+    
+    <ul>
+        <li>
+            <a href="DASHBOARD.html">
+                <i class="bx bxs-grid-alt"></i>
+                <span class="nav-item"> Dashboard</span>
+            </li>
+            </a>
+            
+        <li>
+            <a href="TBack.html">
+                <i class="bx bx-cart-add"></i>
+                <span class="nav-item">Request Pickup</span>
+            </a>
+           
+        </li>
+        <li>
+            <a href="DSform.html">
+                <i class="bx bx-donate-heart"></i>
+                <span class="nav-item"> Sell/Donate</span>
+            </a>
+           
+        </li>
+        <li>
+            <a href="Table.html">
+                <i class="bx bxs-food-menu"></i>
+                <span class="nav-item"> Products</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="Status.html">
+                <i class="bx bx-list-check"></i>
+                <span class="nav-item">Status </span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="Client.html">
+                <i class="bx bx-body"></i>
+                <span class="nav-item"> Clients</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="Fback.html">
+                <i class="bx bx-location-plus"></i>
+                <span class="nav-item"> Feedback</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="eWaste_report.html">
+                <i class="bx bx-pie-chart"></i>
+                <span class="nav-item"> Report</span>
+            </a>
+            
+    </ul>
+          </div>
+           <div class="main-content">
+    <div class="container">
+        
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <link rel="stylesheet" type="text/css" href="eWaste.css">
+            <title>E-Waste Report</title>
+        </head>
+        <body>
+            <div class="container">
+                <form id="eWasteForm" action="eWasteform.php" method="POST">
+                    <table>
+                        <!-- ... (your existing table code) ... -->
+                        
+                    </table>
+                    
+                </form>
+        
+                <div class="chart-container">
+                    <canvas id="E_reportChart"></canvas>
+                </div>
+            </div>
+        
+            <script src="E_reportChart.js"></script>
+        </body>
+        </html>
+        
+        
+    </div>
+          </div>
+          <footer>
+          <div class="footer-container">
+           &copy;copyright reserved Sam@2023 
+          </div>
+          </footer>
+    </body>
+    <script>
+        let btn= document.quarySelector('#btn')
+        let sidebar= document.quarySelector('.sidebar')
+        btn.onclick= function(){
+        sidebar.classList.toggle('active');
+        };
+    </script>
+</html>
